@@ -11,7 +11,13 @@ namespace Cheers
         {
             Console.WriteLine("What's your name?");
             Console.Write("> ");
-            String user_name = Console.ReadLine();
+            String user_name = Console.ReadLine(); // Read from termainal save to a variable
+
+            // user_name.ToUpper() is turning the the user's name to uppercase.
+            // ToUpper() is functionality specific to Strings.
+            // ToUpper() accepts no arguments
+            
+            Console.WriteLine(user_name.ToUpper() + " is.. GRAND!"); //
         }
     }
 }
