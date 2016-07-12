@@ -17,9 +17,16 @@ namespace Cheers
 
             Console.WriteLine("What's your name?");
             Console.Write(prompt);
-            String user_name = Console.ReadLine(); // Read from terminal save to a variable
+            String user_name = Console.ReadLine().ToLower(); // Read from terminal save to a variable
 
+
+            // First Refactoring removing the 'else'
+            /* 
             for(int i = 0; i < user_name.Length; i++) {
+                String cheer_prefix = "Give me a"; // Resets the cheer_prefix variable every iteration through for loop
+                if (requires_an.IndexOf(user_name[i]) > -1) {
+                    cheer_prefix += "n";
+                }
                 Console.WriteLine(cheer_prefix + ".. " + user_name[i]);
 
             }
