@@ -37,7 +37,7 @@ namespace Cheers
             // Last Refactoring using Contains instead of 'IndexOf'
 
             for(int i = 0; i < user_name.Length; i++) {
-                if (requires_an.Contains(user_name[i])) {
+                if (requires_an.Contains(user_name[i])) { // Performs implicit casting from Char to String
                     Console.WriteLine(cheer_prefix + "n" + ".. " + user_name[i]);
                 } else {
                     Console.WriteLine(cheer_prefix + ".. " + user_name[i]);
